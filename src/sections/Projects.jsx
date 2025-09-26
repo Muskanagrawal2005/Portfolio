@@ -5,7 +5,7 @@ import ChromaGrid from '../components/ChromaGrid.jsx'
 const Projects = () => {
   const items = [
     {
-      image: "src/assets/study.jpg",
+      image: "/assets/study.jpg",
       title: "Study Mitr",
       subtitle: "Study platform with match making",
       handle: "Github",
@@ -14,7 +14,7 @@ const Projects = () => {
       url: "https://github.com/Muskanagrawal2005/studyMitr"
     },
     {
-      image: "src/assets/devtime.png",
+      image: "/assets/devtime.png",
       title: "DevTimeCapsule",
       subtitle: "Extension that tracks productivity",
       handle: "Github",
@@ -23,7 +23,7 @@ const Projects = () => {
       url: "https://github.com/Muskanagrawal2005/DevTimeCapsule"
     },
     {
-      image: "src/assets/feedback.png",
+      image: "/assets/feedback.png",
       title: "Feedback Analyzer",
       subtitle: "Cateogarizes feedback into -positive,negative or neutral",
       handle: "Github",
@@ -32,7 +32,7 @@ const Projects = () => {
       url: "https://github.com/Muskanagrawal2005/Customer-feedback-analyzer"
     },
     {
-      image: "src/assets/chatbot.jpg",
+      image: "/assets/chatbot.jpg",
       title: "Museum Booking Chatbot",
       subtitle: "Books the ticket via a chatbot",
       handle: "Github",
@@ -42,7 +42,7 @@ const Projects = () => {
     }
     ,
     {
-      image: "src/assets/note.png",
+      image: "/assets/note.png",
       title: "Notes App",
       subtitle: "Create and remove notes",
       handle: "Github",

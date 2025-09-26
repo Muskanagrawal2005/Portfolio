@@ -7,7 +7,7 @@ const ContactImg = () => {
     <div className='flex justify-center items-center w-full max-w-7xl mx-auto gap-8 min-h-screen'>
       <div className="flex-[3] flex flex-col items-center justify-center">
         <TiltedCard
-          imageSrc="src/assets/contactimg.jpeg "
+          imageSrc="/assets/contactimg.jpeg "
           altText=""
           captionText="Muskan Agrawal"
           containerHeight="300px"

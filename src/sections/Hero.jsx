@@ -41,7 +41,7 @@ const Hero = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
-            src="src/assets/avatarmuskan.png"
+            src="/assets/avatarmuskan.png"
             alt=""
           />
         </div>
