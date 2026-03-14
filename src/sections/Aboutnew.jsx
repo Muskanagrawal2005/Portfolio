@@ -1,34 +1,47 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import ScrollReveal from '../components/ScrollReveal.jsx';
 import CopyEmailButton from '../components/CopyEmailButton.jsx';
 
 const Aboutnew = () => {
-    return (
-        <div className="min-h-[600px]">
-          
-            <h2 className="text-heading">About Me</h2>
-            <ScrollReveal
-                baseOpacity={0}
-                enableBlur={true}
-                baseRotation={5}
-                blurStrength={10}
-            >
-                I build more than just websites—I create experiences that blend design, performance, and functionality. My goal is to craft solutions that not only work but leave a lasting impact.
-            </ScrollReveal>
-            <div className="flex flex-col items-center justify-center gap-4 size-full">
-              <div className="flex gap-4">
-                    <CopyEmailButton className=" px-4 py-2 rounded cursor-pointer flex items-center justify-center" />
-                <a
-                  href="/src/assets/resume.pdf"
-                  download
-                  className="grid-black-color px-4 py-2 rounded cursor-pointer flex items-center justify-center"
-                >
-                  Download Resume
-                </a>
-              </div>
-            </div>
+  const aboutRef = useRef(null)
+  const aboutInView = useInView(aboutRef, { once: false, amount: 0.2 })
+
+  return (
+    <motion.div 
+      ref={aboutRef}
+      className="min-h-[600px]"
+      initial={{ opacity: 0, y: 50 }}
+      animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent inline-block">About Me</h2>
+        <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-4"></div>
+      </div>
+      <ScrollReveal
+        baseOpacity={0}
+        enableBlur={true}
+        baseRotation={5}
+        blurStrength={10}
+      >
+        I build more than just websites—I create experiences that blend design, performance, and functionality. My goal is to craft solutions that not only work but leave a lasting impact.
+      </ScrollReveal>
+      <div className="flex flex-col items-center justify-center gap-4 size-full">
+        <div className="flex gap-4">
+          <CopyEmailButton className=" px-4 py-2 rounded cursor-pointer flex items-center justify-center" />
+          <a
+            href="/Resume.pdf"
+            download
+            className="grid-black-color px-4 py-2 rounded cursor-pointer flex items-center justify-center"
+          >
+            Download Resume
+          </a>
         </div>
-    )
+      </div>
+    </motion.div>
+  )
 }
 
 export default Aboutnew

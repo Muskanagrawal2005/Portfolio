@@ -4,14 +4,14 @@ import Write from './Write'
 
 const Hero = () => {
   return (
+    
     <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="w-full max-w-7xl mx-auto flex items-center justify-center gap-8">
-        {/* Contact Form - 70% */}
-        <div className="flex-[7] flex flex-col items-center justify-center min-w-0">
-          {/* <ContactForm /> */}
-          <div className="w-full max-w-none">
-            <div className="flex flex-col items-center lg:items-start w-full">
-              <div className='flex flex-col gap-7 w-full'>
+      <div className="max-w-4xl w-full pb-4 mx-auto">
+        <div className="flex items-center gap-x-8">
+          {/* Left section */}
+          <div className="w-full lg:w-1/2">
+            <div className="flex flex-col items-center lg:items-start">
+              <div className='flex flex-col gap-7'>
                 <motion.div
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -21,6 +21,7 @@ const Hero = () => {
                   <h1>I'm a</h1>
                   <Write />
                 </motion.div>
+
                 <motion.p
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -32,18 +33,20 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="flex-[3] flex justify-center items-center">
-          
-          <motion.img
-            width={300}
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            src="/assets/avatarmuskan.png"
-            alt=""
-          />
+          {/* Right section */}
+          <div className="w-full lg:w-1/2">
+            <div className="flex justify-center">
+              <motion.img
+                width={300}
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: 1.2 }}
+                src="/assets/avatarmuskan.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

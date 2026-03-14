@@ -26,7 +26,7 @@ function Navigation() {
         </li>
         <li className="nav-li">
             <Link to="stats" smooth={true} duration={500} className='nav-link'>
-                Stats
+                Acheivements
             </Link>
         </li>
         <li className="nav-li">

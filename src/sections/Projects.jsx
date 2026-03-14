@@ -10,7 +10,7 @@ const Projects = () => {
       subtitle: "Study platform with match making",
       handle: "Github",
       borderColor: "#3B82F6",
-      gradient: "linear-gradient(145deg, #3B82F6, #000)",
+      gradient: "transparent",
       url: "https://github.com/Muskanagrawal2005/studyMitr"
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       subtitle: "Extension that tracks productivity",
       handle: "Github",
       borderColor: "#10B981",
-      gradient: "linear-gradient(180deg, #10B981, #000)",
+      gradient: "transparent",
       url: "https://github.com/Muskanagrawal2005/DevTimeCapsule"
     },
     {
@@ -28,7 +28,7 @@ const Projects = () => {
       subtitle: "Cateogarizes feedback into -positive,negative or neutral",
       handle: "Github",
       borderColor: "#3B82F6",
-      gradient: "linear-gradient(145deg, #3B82F6, #000)",
+      gradient: "transparent",
       url: "https://github.com/Muskanagrawal2005/Customer-feedback-analyzer"
     },
     {
@@ -37,7 +37,7 @@ const Projects = () => {
       subtitle: "Books the ticket via a chatbot",
       handle: "Github",
       borderColor: "#10B981",
-      gradient: "linear-gradient(180deg, #10B981, #000)",
+      gradient: "transparent",
       url: "https://github.com/Muskanagrawal2005/Museum-Booking"
     }
     ,
@@ -47,7 +47,7 @@ const Projects = () => {
       subtitle: "Create and remove notes",
       handle: "Github",
       borderColor: "#10B981",
-      gradient: "linear-gradient(180deg, #10B981, #000)",
+      gradient: "transparent",
       url: "https://github.com/Muskanagrawal2005/Museum-Booking"
     }
   ];

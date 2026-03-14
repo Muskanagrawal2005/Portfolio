@@ -13,7 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.10",
     "email-js": "^2.0.3",
-    "framer-motion": "^12.17.3",
+    "framer-motion": "^12.35.2",
     "gsap": "^3.13.0",
     "hover-effect": "^1.2.1",
     "motion": "^12.23.22",
