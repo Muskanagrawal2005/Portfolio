@@ -1,32 +1,35 @@
 import { useState, useRef } from 'react'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
-import About from './sections/About'
+import Aboutnew from './sections/Aboutnew'
 import Herobg from './sections/Herobg'
 import Techstack from './components/Techstack'
-import Aboutnew from './sections/Aboutnew'
 import Projects from './sections/Projects'
-// import ContactForm from './components/ContactForm'
 import ContactImg from './sections/ContactImg'
 import Stats from './sections/Stats'
 import Workexp from './sections/Workexp'
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
+import Education from './sections/Education'
+import Certifications from './sections/Certifications'
+import { motion, useInView } from 'framer-motion'
 
 function App() {
   const projectsRef = useRef(null)
   const achievementsRef = useRef(null)
   const contactRef = useRef(null)
   const skillsRef = useRef(null)
+  const educationRef = useRef(null)
+  const certRef = useRef(null)
 
-  const projectsInView = useInView(projectsRef, { once: false, amount: 0.2 })
-  const achievementsInView = useInView(achievementsRef, { once: false, amount: 0.2 })
-  const contactInView = useInView(contactRef, { once: false, amount: 0.2 })
-  const skillsInView = useInView(skillsRef, { once: false, amount: 0.2 })
+  const projectsInView = useInView(projectsRef, { once: false, amount: 0.1 })
+  const achievementsInView = useInView(achievementsRef, { once: false, amount: 0.1 })
+  const contactInView = useInView(contactRef, { once: false, amount: 0.1 })
+  const skillsInView = useInView(skillsRef, { once: false, amount: 0.1 })
+  const educationInView = useInView(educationRef, { once: false, amount: 0.1 })
+  const certInView = useInView(certRef, { once: false, amount: 0.1 })
 
   return (
     <>
-      <div className="container mx-auto max-w-7xl px-4">
+      <div className="container mx-auto max-w-7xl px-4 overflow-hidden">
         {/* navbar */}
         <Navbar />
 
@@ -46,6 +49,22 @@ function App() {
         {/* work experience */}
         <div id='work' className="py-20"><Workexp /></div>
 
+        {/* education */}
+        <motion.div 
+          ref={educationRef}
+          className="py-20" 
+          id='education'
+          initial={{ opacity: 0, y: 50 }}
+          animate={educationInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent inline-block">Education</h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-4"></div>
+          </div>
+          <Education />
+        </motion.div>
+
         {/* tech stack */}
         <motion.div 
           ref={skillsRef}
@@ -60,7 +79,7 @@ function App() {
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-4"></div>
           </div>
           <div className='flex justify-center'>
-            <div className="grid-default-color w-220 flex justify-center">
+            <div className="grid-default-color w-full flex justify-center">
               <Techstack />
             </div>
           </div>
@@ -82,10 +101,26 @@ function App() {
           <Projects />
         </motion.div>
 
+        {/* certifications */}
+        <motion.div 
+          ref={certRef}
+          className="py-20 mt-12" 
+          id='certifications'
+          initial={{ opacity: 0, y: 50 }}
+          animate={certInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent inline-block">Certifications</h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-4"></div>
+          </div>
+          <Certifications />
+        </motion.div>
+
         {/* stats */}
         <motion.div 
           ref={achievementsRef}
-          className="py-20" 
+          className="py-20 mt-12" 
           id='stats'
           initial={{ opacity: 0, y: 50 }}
           animate={achievementsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -101,7 +136,7 @@ function App() {
         {/* contact */}
         <motion.div 
           ref={contactRef}
-          className="py-20" 
+          className="py-20 mb-20" 
           id='contact'
           initial={{ opacity: 0, y: 50 }}
           animate={contactInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}

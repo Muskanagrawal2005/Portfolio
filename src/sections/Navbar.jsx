@@ -15,6 +15,11 @@ function Navigation() {
             </Link>
         </li>
         <li className="nav-li">
+            <Link to="education" smooth={true} duration={500} className='nav-link'>
+                Education
+            </Link>
+        </li>
+        <li className="nav-li">
             <Link to="skills" smooth={true} duration={500} className='nav-link'>
                 Skills
             </Link>
@@ -25,8 +30,13 @@ function Navigation() {
             </Link>
         </li>
         <li className="nav-li">
+            <Link to="certifications" smooth={true} duration={500} className='nav-link'>
+                Certifications
+            </Link>
+        </li>
+        <li className="nav-li">
             <Link to="stats" smooth={true} duration={500} className='nav-link'>
-                Acheivements
+                Achievements
             </Link>
         </li>
         <li className="nav-li">
@@ -34,7 +44,6 @@ function Navigation() {
                 Contact
             </Link>
         </li>
-
     </ul>
 }
 const Navbar = () => {

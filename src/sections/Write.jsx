@@ -3,7 +3,7 @@ import {useTypewriter,Cursor} from 'react-simple-typewriter';
 
 function Write(){
     const [text]= useTypewriter({
-        words:['Full Stack Developer','Problem Solver',],
+        words:['Muskan Agrawal','a Full Stack Developer','a Problem Solver',],
         loop:true,
     });
     return (
