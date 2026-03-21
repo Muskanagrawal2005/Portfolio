@@ -26,7 +26,7 @@ const Aboutnew = () => {
         baseRotation={5}
         blurStrength={10}
       >
-        I build more than just websites. I create experiences that blend design, performance, and functionality. My goal is to craft solutions that not only work but leave a lasting impact.
+        I build more than just websites. I create experiences that blend design, performance, and functionality. My goal is to craft solutions that not only work but leave a lasting impact. With a result-driven mindset, I am always ready to explore and open to new ideas.
       </ScrollReveal>
       <div className="flex flex-col items-center justify-center gap-4 size-full">
         <div className="flex gap-4">

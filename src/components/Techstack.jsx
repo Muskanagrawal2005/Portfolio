@@ -2,7 +2,7 @@ import React from 'react'
 import {RiReactjsLine} from "react-icons/ri"
 import {TbBrandNextjs} from "react-icons/tb"
 import {SiMongodb} from "react-icons/si"
-import {FaNodeJs} from "react-icons/fa"
+import { FaNodeJs} from "react-icons/fa"
 import { SiTailwindcss, SiExpress, SiPhp, SiCplusplus, SiGit, SiDocker } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion"

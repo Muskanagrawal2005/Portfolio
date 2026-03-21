@@ -6,8 +6,8 @@ const Hero = () => {
   return (
 
     <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-5xl w-full pb-4 mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-x-12 gap-y-12">
+      <div className="max-w-6xl w-full pb-4 mx-auto">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-25">
           {/* Left section */}
           <div className="w-full lg:w-7/12">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -35,15 +35,14 @@ const Hero = () => {
 
           {/* Right section */}
           <div className="w-full lg:w-5/12">
-            <div className="flex justify-center">
+            <div className="flex justify-center lg:justify-end lg:translate-x-8">
               <motion.img
-                width={280}
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.2 }}
-                src="/assets/avatarmuskan.png"
+                src="/assets/profile3.png"
                 alt="Muskan Avatar"
-                className="drop-shadow-2xl"
+                className="w-[100%] max-w-[400px] lg:max-w-[500px] object-contain drop-shadow-2xl scale-110 lg:scale-125 lg:origin-right"
               />
             </div>
           </div>

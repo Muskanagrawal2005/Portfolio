@@ -4,6 +4,7 @@ import Hero from './sections/Hero'
 import Aboutnew from './sections/Aboutnew'
 import Herobg from './sections/Herobg'
 import Techstack from './components/Techstack'
+import Softskills from './components/Softskills'
 import Projects from './sections/Projects'
 import ContactImg from './sections/ContactImg'
 import Stats from './sections/Stats'
@@ -75,12 +76,22 @@ function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent inline-block">Skills</h2>
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent inline-block">Technical Skills</h2>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-4"></div>
           </div>
           <div className='flex justify-center'>
             <div className="grid-default-color w-full flex justify-center">
               <Techstack />
+            </div>
+          </div>
+          
+          <div className="text-center mt-20 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent inline-block">Soft Skills</h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-4"></div>
+          </div>
+          <div className='flex justify-center'>
+            <div className="grid-default-color w-full flex justify-center">
+              <Softskills />
             </div>
           </div>
         </motion.div>
