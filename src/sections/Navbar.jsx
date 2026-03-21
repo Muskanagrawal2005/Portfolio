@@ -5,42 +5,47 @@ import {Link} from 'react-scroll'
 function Navigation() {
     return <ul className='nav-ul'>
         <li className="nav-li">
-            <Link to="home" smooth={true} duration={500} className='nav-link'>
+            <Link to="home" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 Home
             </Link>
         </li>
         <li className="nav-li">
-            <Link to="about" smooth={true} duration={500} className='nav-link'>
+            <Link to="about" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 About
             </Link>
         </li>
         <li className="nav-li">
-            <Link to="education" smooth={true} duration={500} className='nav-link'>
+            <Link to="work" smooth={true} duration={500} className='nav-link cursor-pointer'>
+                Experience
+            </Link>
+        </li>
+        <li className="nav-li">
+            <Link to="education" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 Education
             </Link>
         </li>
         <li className="nav-li">
-            <Link to="skills" smooth={true} duration={500} className='nav-link'>
+            <Link to="skills" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 Skills
             </Link>
         </li>
         <li className="nav-li">
-            <Link to="projects" smooth={true} duration={500} className='nav-link'>
+            <Link to="projects" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 Projects
             </Link>
         </li>
         <li className="nav-li">
-            <Link to="certifications" smooth={true} duration={500} className='nav-link'>
+            <Link to="certifications" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 Certifications
             </Link>
         </li>
         <li className="nav-li">
-            <Link to="stats" smooth={true} duration={500} className='nav-link'>
+            <Link to="stats" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 Achievements
             </Link>
         </li>
         <li className="nav-li">
-            <Link to="contact" smooth={true} duration={500} className='nav-link'>
+            <Link to="contact" smooth={true} duration={500} className='nav-link cursor-pointer'>
                 Contact
             </Link>
         </li>
