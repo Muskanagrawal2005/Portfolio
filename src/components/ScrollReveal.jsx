@@ -42,14 +42,14 @@ const ScrollReveal = ({
       el,
       { transformOrigin: '0% 50%', rotate: baseRotation },
       {
-        ease: 'none',
+        ease: 'power2.out',
         rotate: 0,
+        duration: 1,
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: 'top bottom',
-          end: rotationEnd,
-          scrub: true
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
         }
       }
     );
@@ -60,15 +60,15 @@ const ScrollReveal = ({
       wordElements,
       { opacity: baseOpacity, willChange: 'opacity' },
       {
-        ease: 'none',
+        ease: 'power2.out',
         opacity: 1,
-        stagger: 0.05,
+        stagger: 0.02,
+        duration: 0.5,
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: 'top bottom-=20%',
-          end: wordAnimationEnd,
-          scrub: true
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
         }
       }
     );
@@ -78,15 +78,15 @@ const ScrollReveal = ({
         wordElements,
         { filter: `blur(${blurStrength}px)` },
         {
-          ease: 'none',
+          ease: 'power2.out',
           filter: 'blur(0px)',
-          stagger: 0.05,
+          stagger: 0.02,
+          duration: 0.5,
           scrollTrigger: {
             trigger: el,
             scroller,
-            start: 'top bottom-=20%',
-            end: wordAnimationEnd,
-            scrub: true
+            start: 'top 85%',
+            toggleActions: 'play none none reverse'
           }
         }
       );
@@ -95,7 +95,7 @@ const ScrollReveal = ({
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
-  }, [scrollContainerRef, enableBlur, baseRotation, baseOpacity, rotationEnd, wordAnimationEnd, blurStrength]);
+  }, [scrollContainerRef, enableBlur, baseRotation, baseOpacity, blurStrength]);
 
   return (
     <h2 ref={containerRef} className={`scroll-reveal ${containerClassName}`}>
