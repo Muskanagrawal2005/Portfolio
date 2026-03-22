@@ -34,15 +34,15 @@ const Hero = () => {
           </div>
 
           {/* Right section */}
-          <div className="w-full lg:w-5/12">
+          <div className="w-full lg:w-5/12 pb-10 lg:pb-0">
             <div className="flex justify-center lg:justify-end lg:translate-x-8">
               <motion.img
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.2 }}
-                src="/assets/profile3.png"
+                src="/assets/abc.png"
                 alt="Muskan Avatar"
-                className="w-[100%] max-w-[400px] lg:max-w-[500px] object-contain drop-shadow-2xl scale-110 lg:scale-125 lg:origin-right"
+                className="w-[100%] max-w-[350px] lg:max-w-[450px] rounded-3xl object-cover shadow-[0_0_40px_rgba(120,119,198,0.3)] border border-white/10 lg:origin-right"
               />
             </div>
           </div>
