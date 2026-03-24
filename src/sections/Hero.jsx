@@ -40,7 +40,7 @@ const Hero = () => {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.2 }}
-                src="/assets/abc.png"
+                src="/assets/profile4.jpeg"
                 alt="Muskan Avatar"
                 className="w-[100%] max-w-[350px] lg:max-w-[450px] rounded-3xl object-cover shadow-[0_0_40px_rgba(120,119,198,0.3)] border border-white/10 lg:origin-right"
               />

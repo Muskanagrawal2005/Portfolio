@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Ayurvedic Health Dashboard",
     description: "A centralized wellness platform for dietitians and patients that generates Dosha-based Ayurvedic diet plans. Features include AI-based nutrient analysis, self-healing Gemini API integration, automated calorie tracking, and JWT authentication with secure cookies.",
-    image: "../assets/health.png",
+    image: "../assets/ayur.png",
     stack: ["React", "Node.js", "Express.js", "MongoDB", "TailwindCSS", "Gemini API", "Razorpay SDK"],
     github: "https://github.com/Muskanagrawal2005/AyuBalance",
     live: null,
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Customer Feedback Analyzer",
     description: "An AI-powered system that analyzes customer reviews to extract sentiment insights and identify common product issues. Includes dashboard visualization for feedback trends and automated topic extraction.",
-    image: "../assets/customer.png",
+    image: "../assets/feedback.png",
     stack: ["React", "Node.js", "Express.js", "MongoDB", "HuggingFace"],
     github: "https://github.com/Muskanagrawal2005",
     live: null,
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Dev Time Capsule Extension",
     description: "A browser extension that allows developers to save coding milestones, learning breakthroughs, and future messages to themselves. Features a lightweight storage system and productivity journaling.",
-    image: "../assets/dev.png",
+    image: "../assets/extension.png",
     stack: ["JavaScript", "Chrome APIs", "HTML", "CSS"],
     github: "https://github.com/Muskanagrawal2005",
     live: null,
@@ -46,7 +46,8 @@ const ProjectCard = ({ project, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="group flex flex-col bg-white/5 border border-white/10 backdrop-blur-sm rounded-3xl p-6 hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 h-full"
     >
-      {/* Banner Image */}
+      {/* Banner Image (Hidden currently) */}
+      {/*
       <div className="w-full overflow-hidden rounded-2xl relative mb-6">
         <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
         <img
@@ -55,6 +56,7 @@ const ProjectCard = ({ project, index }) => {
           className="w-full h-48 sm:h-64 object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
         />
       </div>
+      */}
 
       {/* Content */}
       <div className="flex flex-col flex-grow">
