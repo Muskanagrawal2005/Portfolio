@@ -24,7 +24,7 @@ const projects = [
     description: "An AI-powered system that analyzes customer reviews to extract sentiment insights and identify common product issues. Includes dashboard visualization for feedback trends and automated topic extraction.",
     image: "../assets/feedback.png",
     stack: ["React", "Node.js", "Express.js", "MongoDB", "HuggingFace"],
-    github: "https://github.com/Muskanagrawal2005",
+    github: "https://github.com/Muskanagrawal2005/Customer-feedback-analyzer",
     live: null,
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description: "A browser extension that allows developers to save coding milestones, learning breakthroughs, and future messages to themselves. Features a lightweight storage system and productivity journaling.",
     image: "../assets/extension.png",
     stack: ["JavaScript", "Chrome APIs", "HTML", "CSS"],
-    github: "https://github.com/Muskanagrawal2005",
+    github: "https://github.com/Muskanagrawal2005/DevTimeCapsule",
     live: null,
   }
 ];
